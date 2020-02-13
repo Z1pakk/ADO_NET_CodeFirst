@@ -11,6 +11,12 @@ namespace CodeFirstExample.Entities
     [Table("tblPersons")]
     public class Person
     {
+        public Person()
+        {
+            PersonCoursesOf = new HashSet<PersonCourse>();
+            PersonOrdersOf = new HashSet<PersonOrders>();
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -25,5 +31,11 @@ namespace CodeFirstExample.Entities
 
         [Required]
         public bool Gender { get; set; }
+
+        public virtual PersonCreditInfo PersonCreditInfoOf { get; set; }
+
+        public virtual ICollection<PersonOrders> PersonOrdersOf { get; set; }
+
+        public ICollection<PersonCourse> PersonCoursesOf { get; set; }
     }
 }

@@ -53,11 +53,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Course.cs" />
     <Compile Include="Entities\EFContext.cs" />
     <Compile Include="Entities\Person.cs" />
+    <Compile Include="Entities\PersonCourse.cs" />
+    <Compile Include="Entities\PersonCreditInfo.cs" />
+    <Compile Include="Entities\PersonOrders.cs" />
     <Compile Include="Migrations\202002111702023_Initilize project and add Persons.cs" />
     <Compile Include="Migrations\202002111702023_Initilize project and add Persons.designer.cs">
       <DependentUpon>202002111702023_Initilize project and add Persons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002121829157_Add tblPersonCreditInfo.cs" />
+    <Compile Include="Migrations\202002121829157_Add tblPersonCreditInfo.designer.cs">
+      <DependentUpon>202002121829157_Add tblPersonCreditInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002121845190_Add tblPersonOrders.cs" />
+    <Compile Include="Migrations\202002121845190_Add tblPersonOrders.designer.cs">
+      <DependentUpon>202002121845190_Add tblPersonOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002131645060_Add Course for Person.cs" />
+    <Compile Include="Migrations\202002131645060_Add Course for Person.designer.cs">
+      <DependentUpon>202002131645060_Add Course for Person.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -70,6 +86,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202002111702023_Initilize project and add Persons.resx">
       <DependentUpon>202002111702023_Initilize project and add Persons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002121829157_Add tblPersonCreditInfo.resx">
+      <DependentUpon>202002121829157_Add tblPersonCreditInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002121845190_Add tblPersonOrders.resx">
+      <DependentUpon>202002121845190_Add tblPersonOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002131645060_Add Course for Person.resx">
+      <DependentUpon>202002131645060_Add Course for Person.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

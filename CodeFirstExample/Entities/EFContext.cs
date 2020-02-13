@@ -15,5 +15,9 @@ namespace CodeFirstExample.Entities
         }
 
         public DbSet<Person> Persons { get; set; }
+
+        public DbSet<PersonCreditInfo> PersonCreditInfoes { get; set; }
+
+        public DbSet<PersonOrders> PersonOrders { get; set; }
     }
 }
